@@ -1,0 +1,90 @@
+/* game board table */
+
+#board td {
+  width: 60px;
+  height: 60px;
+  border-radius:3px;
+  border: solid 1px #666;
+}
+
+#board{
+  margin: auto;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.Red{
+  background-color: red;
+  border-radius: 50%;
+  margin:5%;
+  width: 90%;
+  height: 90%;
+  animation: .5s linear 1s slidein;
+}
+
+.Blue{
+  background-color: blue;
+  border-radius: 50%;
+  margin:5%;
+  width: 90%;
+  height: 90%;
+  animation-name: slidin;
+  animation-duration: 750ms;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: rgba(106, 109, 121, 0.452);
+}
+
+.msg{
+  position: absolute;
+}
+
+body{
+  font-family: 'Courier Prime';
+  background-color: whitesmoke;
+}
+
+#header{
+  margin:auto;
+  text-align: center;
+}
+
+.start{
+  width: 15rem;
+  border-radius: 6px;
+  margin: 15px;
+  font-size: 150%;
+  font-family:'Courier Prime' ;
+  background-color: rgba(129, 125, 136, 0.459);
+}
+
+.red-turn{
+  font-size:150%;
+  padding: 30pt;
+  color:red;
+  margin: auto;
+}
+
+.blue-turn{
+  font-size: 150%;
+  padding: 30pt;
+  color:blue;
+  margin: auto;
+}
+
+.hidden{
+  color:whitesmoke;
+  border-color: whitesmoke;
+}
+
+h1{
+  text-align: center;
+  font-size: 50pt;
+}
